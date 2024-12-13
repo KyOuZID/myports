@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portofolio</title>
+
+    <!--Box Icon link-->
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    
+    <!--Remix Icon Link-->
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+
+    <!--Google Font Link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/port2.css">
+
+<style>
+*{
+padding: 0;
+margin: 0;
+box-sizing: 0;
+font-family: 'Poppins', sans-serif;
+list-style: none;
+text-decoration: none;
+}
+header{
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 35px 9%;
+}
+.logo{
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+    margin-left: 30px;
+}
+.navlist{
+    display: flex;
+}
+.navlist a{
+    color: white;
+    margin-left: 60px;
+    font-size: 15px;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    transition: all .55s ease;
+}
+.navlist a:hover{
+    border-bottom: 2px solid white;
+}
+#menu-icon{
+    color: white;
+    font-size: 35px;
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+}
+.yuhu1{
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    display: grid;
+    background: linear-gradient(245.59deg, #4d9559 0%, #38703d 28.53%, #133917 75.52%);
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+    overflow: hidden;
+    padding: 0 5%;
+    box-sizing: border-box;
+}
+.kebersamaan{
+    margin-top: 20rem;
+}
+.motret{
+    margin-top: 10rem;
+    padding: 15px 20px;
+}
+</style>
+
+</head>
+<body>
+    
+    <header>
+        <a href="#" class="logo">PORTOFOLIO</a>
+        <ul class="navlist">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="portofolio2.htm">My Portofolio</a></li>
+            <li><a href="portofolio.html">About Me</a></li>
+            <li><a href="askme.html">Ask Me !</a></li>
+        </ul>
+        <div class="bx bx-menu" id="menu-icon"></div>
+    </header>
+
+    <section class="yuhu2">
+        <div class="yuhu1">
+
+           <div class="kebersamaan">
+            <img src="image/kebersamaan.jpg" width="256px">
+           </div>
+
+           <div class="mortret">
+            <img src="image/motret.jpg" width="256px">
+           </div>
+
+           <div class="nonton">
+            <img src="image/nobar.jpg" width="256px">
+           </div>
+
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,150 @@
+*{
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: 0;
+    color: white;
+}
+header{
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 35px 9%;
+}
+.logo{
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+    margin-left: 30px;
+}
+.navlist{
+    display: flex;
+}
+.navlist a{
+    color: white;
+    margin-left: 60px;
+    font-size: 15px;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    transition: all .55s ease;
+}
+.navlist a:hover{
+    border-bottom: 2px solid white;
+}
+.page2{
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    display: grid;
+    background: linear-gradient(245.59deg, #4d9559 0%, #38703d 28.53%, #133917 75.52%);
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+    padding: 0 5%;
+}
+#menu-icon{
+    color: white;
+    font-size: 35px;
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+}
+section{
+    padding: 0 25%;
+}
+.mydesc2 h1{
+    color: white;
+}
+.mydesc2 p{
+    color: white;
+    padding-bottom: 2rem;
+}
+.mydesc2 .list-item1{
+    color: white;
+}
+
+
+@media (max-width: 1553px){
+    header{
+        padding: 15px 3%;
+        transition: .2s;
+    }
+}
+@media (max-width: 1460px){
+    section{
+        padding: 0 12%;
+        transition: .2s;
+    }
+}
+@media (max-width: 1340px){
+    .myimg2 img{
+        width: 100%;
+        height: auto;
+    }
+    .mydesc2 h1{
+        font-size: 75px;
+        margin: 0 0 30px;
+    }
+}
+@media (max-width: 1195px){
+    section{
+        padding: 0 3%;
+        transition: .2s;
+    }
+    .mydesc2{
+        padding-top: 115px;       
+    }
+    .myimg2{
+        text-align:center ;
+    }
+    .myimg2 img{
+        width: 560px;
+        height: auto;
+    }
+    .page2{
+        height: 100%;
+        gap: 1rem;
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width: 990px){
+    #menu-icon{
+        display: block;
+    }
+    .navlist{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 300px;
+        height: 40vh;
+        background: #4d9559;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 50px 20px;
+        transition: all .55s ease;
+    }
+    .navlist a{
+        margin-left: 0;
+        display: block;
+        margin: 7px 0;
+    }
+    .navlist.open{
+        right: 0;
+    }
+}
+@media (max-width: 680px){
+    .myimg2 img{
+        width: 100%;
+        height: auto;
+    }
+}
